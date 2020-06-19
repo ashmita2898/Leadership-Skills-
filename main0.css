@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+h2{
+	text-align: center;
+	font-size: 60px;
+	font-family: "Open Sans", sans-serif;
+}
+
+h3{
+	text-align: center;
+	font-size: 15px;
+}
+
+p{
+	font-size: 12px;
+}
+
+.quote{
+	width: 1200px;
+	min-height: 420px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	z-index: 2;
+
+}
+
+.quote .box {
+
+	position: relative;
+	width: 360px;
+	height: 400px;
+	background: #FDFEFE;
+	overflow: hidden;
+	transition: 0.5s;
+    z-index: 2;
+    box-sizing: border-box;
+    padding: 30px;
+    box-shadow: -10px 25px 50px rgba(0,0,0,0.2);
+}
+
+.quote .box:hover {
+	box-shadow: -20px 50px 100px rgba(0,0,0,0.5);
+}
+
+.quote .bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	transition: 0.5s;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+
+}
+
+.quote .box.box1:hover ~ .bg,
+.quote .box.box1:hover
+{
+	opacity: 1;
+	background: linear-gradient(#FBCA03,#6A0836);
+
+}
+
+.quote .box.box2:hover ~ .bg,
+.quote .box.box2:hover
+{
+	opacity: 1;
+	background: linear-gradient(#CD6155,#76448A);
+
+}
+
+.quote .box.box3:hover ~ .bg,
+.quote .box.box3:hover
+{
+	opacity: 1;
+	background: linear-gradient(#0E6655,#5D6D7E);
+
+}
+
+.quote .box.box4:hover ~ .bg,
+.quote .box.box4:hover
+{
+	opacity: 1;
+	background: linear-gradient(#7D6608,#6E2C00);
+
+}
+
+
+.btn{
+	font-family: arial;
+	text-transform: initial;
+	font-size: 50px;
+	width: 400px;
+	height: 80px;
+	border-radius: 100px;
+	line-height: 80px;
+	text-align: center;
+	border: 3px solid #17202A;
+	display: block;
+	text-decoration: none;
+	margin: 100px auto;
+	color: #34495E;
+	position: relative;
+	overflow: hidden;
+	background: transparent;
+	transition: .3s;
+
+}
+
+.btn:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: linear-gradient(#82E0AA,#94F076);
+	opacity: .5s;
+	top: -100%;
+	left: 0;
+	z-index: -1;
+	transition: .3s;
+
+
+}
+
+
+
+.btn:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: linear-gradient(#FBBE5F,#FDA08F);
+	top: -100%;
+	left: 0;
+	z-index: -1;
+	transition: .3s;
+    transition-delay: .2s;
+}
+
+.btn:hover{
+	color: #C0392B;
+}
+
+.btn:hover:before{
+	top: 0;
+}
+
+.btn:hover:after{
+	top: 0;
+
+}
+
+}
+}

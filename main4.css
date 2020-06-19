@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:ital,wght@0,100;0,400;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+body{
+	background: linear-gradient(#DAF7A6,#7BB3A8);
+    
+}
+
+h1{
+	text-align: center;
+	font-size: 4em;
+	color:#0E6251;
+
+ }
+
+ h2{
+ 	text-align: center;
+ 	font-size: 40px;
+ 	color: #566573;
+ 	text-transform: uppercase;
+ }
+
+ p{
+ 	text-align: center;
+ 	font-size: 25px;
+ 	color: #2C3E50;
+ 	text-transform: initial;
+ }
+
+ h3{
+ 	text-align: center;
+ 	font-size: 30px;
+ 	color: #566573;
+ 	text-transform: initial;
+
+ }
+
+ 
+
+
+
+ .row{
+ 	background: #F08080;
+ 	width: 80%;
+ 	margin: 4% auto;
+ 	display: flex;
+ 	flex-wrap: wrap;
+ 	align-items: center;
+ }
+
+ .column{
+ 	flex-basis: 25%;
+ 	text-align: center;
+
+
+ }
+
+ .column image{
+ 	width: 100%;
+ 	cursor: pointer;
+ 	transition: 1s;
+ }
+
+
+.column:hover image{
+	transform: scale(1.1);
+
+}
+
+.button{
+	font-family: arial;
+	text-transform: initial;
+	font-size: 50px;
+	width: 400px;
+	height: 80px;
+	border-radius: 100px;
+	line-height: 80px;
+	text-align: center;
+	border: 3px solid #17202A;
+	display: block;
+	text-decoration: none;
+	margin: 100px auto;
+	color: #34495E;
+	position: relative;
+	overflow: hidden;
+	background: transparent;
+	transition: .3s;
+
+}
+
+.button:before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #767DF0;
+	opacity: .5s;
+	top: -100%;
+	left: 0;
+	z-index: -1;
+	transition: .3s;
+
+
+}
+
+
+
+.button:after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background:#7F8C8D;
+	top: -100%;
+	left: 0;
+	z-index: -1;
+	transition: .3s;
+    transition-delay: .2s;
+}
+
+.button:hover{
+	color: #C0392B;
+}
+
+.button:hover:before{
+	top: 0;
+}
+
+.button:hover:after{
+	top: 0;
+
+}
+
+
+}
